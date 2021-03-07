@@ -16,7 +16,7 @@
 #####Simulated payload fairing 
 
 
-1.  Unstrustured mesh fairing  
+1.  Unstructured mesh fairing  
 ![results](./img/gslv_fairing_mesh.png)   
 2.  Mach - 0.9, Angle-of-Attack - 0.0  
 ![results](./img/M09_AOA0_mach.png)     
