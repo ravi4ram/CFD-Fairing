@@ -36,9 +36,9 @@ Included the minimalistic working geometry file for the 2D fairing flow simulati
 ## Setup
 Tested the code on Linux based setup.    
 
-1. Gmsh - Mesh generation
-2. SU2  - CFD solver 
-3. Paraview - flow visualization  
+1. Gmsh (Version-4.7.1) - Mesh generation
+2. SU2 (Version-7.1.0) - CFD solver 
+3. Paraview (Version-5.7.0) - flow visualization  
 
 &nbsp;    
 SU2 appears in two flavours. Single core/cpu version or MPI version for parallel computations.    
