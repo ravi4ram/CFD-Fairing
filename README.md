@@ -1,5 +1,8 @@
-# CFD Flow Simulation of 2D GSLV MK-III Fairing
-> Flow simulation over gslv-mk3 fairing using SU2 solver.   
+# CFD Flow Simulation of 2D PSLV and GSLV MK-III Fairing
+> Flow simulation over pslv and gslv-mk3 fairings using SU2 solver.   
+
+## Update   
+>Included PSLV fairing geometry and configuration files   
 
 ## Table of contents
 * [Screenshots](#screenshots)
@@ -13,20 +16,20 @@
 
 ## Screenshots
    
-#####Simulated payload fairing 
+Simulated payload fairing 
 
+> PSLV  
+1.  Unstructured mesh fairing  
+![results](./img/pslv_fairing_mesh.png)   
+2.  Mach - 0.9 and 1.2, Angle-of-Attack - 0.0  
+![results](./img/M09_M12_AOA0_mach.png)     
 
+> GSLV Mk-III  
 1.  Unstructured mesh fairing  
 ![results](./img/gslv_fairing_mesh.png)   
-2.  Mach - 0.9, Angle-of-Attack - 0.0  
-![results](./img/M09_AOA0_mach.png)     
-3.  Mach - 0.9, Angle-of-Attack - 3.6   
-![results](./img/M09_AOA3_mach.png)         
-4.  Mach - 0.5, Angle-of-Attack - 0.0   
-![results](./img/M05_AOA0_mach.png)         
-5.  Center of Pressure : ( M-0.9 & M-0.5)  
-![results](./img/M09_M05Cp-vs-X.png)   
-6. 
+2.  Mach - 0.5 and 0.9, Angle-of-Attack - 0.0  
+![results](./img/M05_M09_AOA0_mach.png)     
+
 
 ## General info
 Included the minimalistic working geometry file for the 2D fairing flow simulation. 
@@ -46,19 +49,21 @@ If you have multi-core processor, then MPI version speeds up the computation. Yo
 
 
 ## How to run   
-Download the files,       
+>Download the files,       
 
-#####Single CPU mode:   
+>Single CPU mode:   
 1.  Execute `SU2_CFD turb_SA_gslv_fairing.cfg` on terminal.    
 2.  Open flow.vtu file through Paraview.    
 
-#####Parallel computation mode:   
+>Parallel computation mode:   
 1.  Execute `mpirun -n 4 SU2_CFD turb_SA_gslv_fairing.cfg` on terminal. (4-cores will be used, Only half on your pc might be allowed.)   
 2.  Open flow.vtu file through Paraview.  
 
+To execute PSLV, choose the turb_SA_pslv_fairing.cfg file in the command  
 
 ## Updates   
+* [12Mar2021] Included PSLV fairing geometry and configuration files 
 
 ## To-do list
-* 
+* SSLV
 
