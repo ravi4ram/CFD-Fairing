@@ -1,8 +1,8 @@
 # CFD Flow Simulation of 2D PSLV and GSLV MK-III Fairing
 > Flow simulation over pslv and gslv-mk3 fairings using SU2 solver.   
 
-## Update   
->Included PSLV fairing geometry and configuration files   
+&nbsp;    
+#### Update (27-DEC-22) : Tested with SU2 (Version-7.4.0) (no change in config needed)  
 
 ## Table of contents
 * [Screenshots](#screenshots)
@@ -40,7 +40,7 @@ Included the minimalistic working geometry file for the 2D fairing flow simulati
 Tested the code on Linux based setup.    
 
 1. Gmsh (Version-4.7.1) - Mesh generation
-2. SU2 (Version-7.1.0) - CFD solver 
+2. SU2 (Version-7.4.0) - CFD solver 
 3. Paraview (Version-5.7.0) - flow visualization  
 
 &nbsp;    
@@ -62,6 +62,7 @@ If you have multi-core processor, then MPI version speeds up the computation. Yo
 To execute PSLV, choose the turb_SA_pslv_fairing.cfg file in the command  
 
 ## Updates   
+* [27-DEC-22] Tested to work with SU2 (Version-7.4.0)
 * [12Mar2021] Included PSLV fairing geometry and configuration files 
 
 ## To-do list
